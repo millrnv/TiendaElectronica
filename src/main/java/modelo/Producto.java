@@ -55,14 +55,12 @@ public class Producto {
         this.stock = stock;
     }
 
-    @Override
-    public String toString() {
-        return "Producto{" +
-                "nombre='" + nombre + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                ", categoria='" + categoria + '\'' +
-                ", precio=" + precio +
-                ", stock=" + stock +
-                '}';
+    public void mostrarProducto() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Descripción: " + descripcion);
+        System.out.println("Precio: " + precio);
+        System.out.println("Stock: " + stock);
+        System.out.println("Categoría: " + categoria);
     }
 }
+
